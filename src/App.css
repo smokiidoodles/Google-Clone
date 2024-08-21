@@ -1,38 +1,143 @@
 .App {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+  .Top-bar {
+list-style-type: none; 
+margin: 0; 
+display: flex;
+}
+ 
+.Top-bar-two {
+  list-style-type: none; 
+display: flex;
+position: fixed;
+top: 10px;
+right: 40px;
+}
+
+.user-icon {
+  height: 45px;
+  width: 45px;
+  object-fit: fill;
+  position: fixed;
+  right: 2px;
+  top: 10px;
+
+}
+.more-button{
+  height: 30px;
+  width: 40px;
+  object-fit: fill;
+  position: fixed;
+  right: 40px;
+  top: 20px;
+}
+
+.Top-bar li {
+  padding-left: 10px;
+}
+
+.Top-bar-two li {
+  padding-left: 20px;
+}
+.Google {
+  display: block;
+  padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+.wholeSearch {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 1px;
+  max-width: 1000px;
+  border-color: rgba(0, 0, 0, 0.217);
+  box-shadow: 1px 1px 5px rgba(80, 79, 79, 0.52);
+  border-style: solid;
+  border-radius: 15px;
+  height: 60px;
+}
+
+.searchBox {
+  display: inline;
+
+}
+.searchIcon {
+  width: 40px;
+  padding-top: 20px;
+}
+
+.cameraIcon {
+  margin-right:10px;
+  width:60px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  float: right;
+  right: 10px;
+}
+
+input {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  grid-column: 2;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Buttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  border-style: none;
+  background-color: rgb(253, 250, 244);
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Footer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: fixed;
+  bottom: 1px;
+  background-color: rgb(211, 210, 210);
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.Footer ul{
+  padding:0;
+  margin:0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Footer li {
+  display: inline-block;
+  padding: 0 20px;
+}
+/*
+.Foot-bar-two {
+  position: fixed;
+  right: 20px;
+  bottom: 2px;
+}
+*/
+
+a {
+  display:block;
+  text-align: center;
+  padding-top: 50px;
 }
